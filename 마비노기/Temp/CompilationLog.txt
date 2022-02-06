@@ -1,0 +1,24 @@
+# Starting compiling UnityEngine.TestRunner.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-d519cae5838d9ca4aa80d0e4999d5e78
+# Starting compiling UnityEngine.UI.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-44cadbae85d8cfb4f91f8763a6d6b5f9
+# Starting compiling UnityEditor.TestRunner.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-3c5542db78c4a3a42ab6bacda6817d5d
+# Starting compiling UnityEditor.UI.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-04c32918f1274404a93113d97a8fe747
+# Starting compiling Unity.VSCode.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a643b76112fea694a803a08bd4afb16a
+# Starting compiling Unity.VisualStudio.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-cd0e46e8414d43c408ac138c4cb76c14
+# Starting compiling Unity.Timeline.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-e2b5649cd219661469ba218e074b1205
+# Starting compiling Unity.TextMeshPro.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-416ea464bfbde8c468e8fbea2fe9630f
+# Starting compiling Unity.CollabProxy.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-ca43bf8040eec834781c2e683ddb637d
+# Starting compiling Unity.Rider.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-45f779d7ab77a6247afa2860efdb45f3
+# Starting compiling Unity.Timeline.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-0ce079c4c3c2c9c449dbca79281720d8
+# Starting compiling Unity.TextMeshPro.Editor.dll
+D:\unity\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-9336c2f9511dddd4da8fb7c02219806d
