@@ -46,7 +46,10 @@ public class VirtualjoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         switch (joystickType)
         {
             case JoystickType.Move:
-                controller.Move(inputDirection);
+                {
+                    controller.Move(inputDirection);
+                    controller.Stop_Ani();
+                }
                 break;
 
             case JoystickType.Rotate:
