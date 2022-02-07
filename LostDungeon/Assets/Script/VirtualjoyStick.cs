@@ -9,6 +9,9 @@ public class VirtualjoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private RectTransform lever;
     private RectTransform rectTransform;
 
+    [SerializeField]
+    private Canvas mainCanvas;
+
     [SerializeField, Range(10,150)]
     private float leverRange;
 
@@ -47,14 +50,15 @@ public class VirtualjoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 break;
 
             case JoystickType.Rotate:
-                controller.LookAround(inputDirection*0.8f);
+                controller.LookAround(inputDirection);
                 break;
         }
     }
 
     private void ControlJoyStickLever(PointerEventData eventData)
     {
-        var inputPos = eventData.position - rectTransform.anchoredPosition;
+        var scaledAnchoredPosition = rectTransform.anchoredPosition * mainCanvas.transform.localScale.x;
+        var inputPos = eventData.position - scaledAnchoredPosition;
         var inputVector = inputPos.magnitude < leverRange ? inputPos : inputPos.normalized * leverRange;
         lever.anchoredPosition = inputVector;
         inputDirection = inputVector / leverRange;
@@ -69,7 +73,7 @@ public class VirtualjoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 break;
 
             case JoystickType.Rotate:
-                controller.LookAround(inputDirection*0.8f);
+                controller.LookAround(inputDirection);
                 break;
         }
        
