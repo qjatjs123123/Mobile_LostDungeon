@@ -39,6 +39,6 @@ public class MainController : MonoBehaviour
 
 
 
-        rigibody.velocity = new Vector3(moveX, 0, moveZ);
+      //  rigibody.velocity = new Vector3(moveX, 0, moveZ);
     }
 }

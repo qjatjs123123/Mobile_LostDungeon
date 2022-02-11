@@ -41,7 +41,7 @@ public class TPSCharacterController : MonoBehaviour
         bool isMove = moveInput.magnitude != 0;
         // 입력이 발생하는 중이라면 이동 애니메이션 재생
         animator.SetBool("IsWalk", true);
-        animator.SetFloat("v", inputDirection.y);
+         //animator.SetFloat("v", inputDirection.y);
 
         if (isMove)
         {
@@ -59,7 +59,7 @@ public class TPSCharacterController : MonoBehaviour
             // 이동할 때 이동 방향 바라보기
             characterBody.forward = moveDir;
             // 이동
-            transform.position += moveDir * Time.deltaTime * 5f;
+            transform.position += moveDir * Time.deltaTime * 10f;
         }
     }
 

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
+    <Compile Include="Assets\ExplosiveLLC\Editor\SetupInputLayers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
