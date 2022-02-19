@@ -20,7 +20,6 @@ public class PlayerAnimator : MonoBehaviour
 
     public void OnWeaponAttack()
     {
-        
         animator.SetTrigger("OnWeaponAttack");
     }
 }

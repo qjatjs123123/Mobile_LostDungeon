@@ -10,6 +10,7 @@ public class TPSCharacterController : MonoBehaviour
     private Transform cameraArm;
 
     Animator animator;
+    bool IsAttack;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,6 @@ public class TPSCharacterController : MonoBehaviour
     }
     public void Stop_Ani()
     {
-        Debug.Log("STop_ani");
         animator.SetBool("IsWalk", false);
         animator.SetFloat("v", 0f);
     }
@@ -41,9 +41,9 @@ public class TPSCharacterController : MonoBehaviour
         bool isMove = moveInput.magnitude != 0;
         // 입력이 발생하는 중이라면 이동 애니메이션 재생
         animator.SetBool("IsWalk", true);
-         //animator.SetFloat("v", inputDirection.y);
-
-        if (isMove)
+        //animator.SetFloat("v", inputDirection.y);
+        IsAttack = animator.GetBool("OnWeaponAttack");
+        if (isMove && !IsAttack)
         {
             // 카메라가 바라보는 방향
             Vector3 lookForward = new Vector3(cameraArm.forward.x, 0f, cameraArm.forward.z).normalized;
