@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject attackCollision;
     Animator animator;
     [SerializeField]
     private Transform characterBody;
@@ -16,6 +18,10 @@ public class PlayerAnimator : MonoBehaviour
     private void Awake()
     {
         animator = characterBody.GetComponent<Animator>();
+    }
+    public void OnAttackCollision()
+    {
+        attackCollision.SetActive(true);
     }
 
     public void OnWeaponAttack()
